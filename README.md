@@ -5,3 +5,4 @@
 
 资源猫手机版更新地址：[资源猫2023](https://xswl.lanzouw.com/b017aleih)
 
+资源猫手机64位版更新地址：[资源猫64位](https://xswl.lanzouw.com/b018yhxpe)
