@@ -4,3 +4,6 @@
 
 资源猫HD版[平板版]更新地址：[资源猫HD](https://xswl.lanzouw.com/b018x5jfc)
 
+
+#### 创建音频源示例
+[创建音频源示例](https://github.com/Jason-wam/Cat-Maven-2023/blob/main/const/PlayList.md)
