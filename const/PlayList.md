@@ -36,3 +36,12 @@
 }
 ```
 创建的音频源可以命名为 *.vdv.json或 *.vdv，然后选择资源猫打开即可
+
+同时支持使用Intent或URI协议调用资源猫打开:
+```
+videocat://audio/url?url=http%3A%2F%2F192.168.0.5%3A8080%2Flocal
+
+url建议使用URL编码
+
+html中调用：<a href="videocat://audio/url?url=http%3A%2F%2F192.168.0.5%3A8080%2Flocal">调用示例</a>
+```
