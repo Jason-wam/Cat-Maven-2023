@@ -7,11 +7,11 @@
   "image": "http://picture.ik123.com/uploads/allimg/180106/4-1P106094325.jpg",
   "subtitle": "2023-05-18 20:11 / 直播源 / 全球直播",
   "description": "一些从网络上收集的电视直播，可能不定时失效。",
-  "sources": [
+  "sources": [ //同音频源一样，这里也可以包含多个子项
     {
       "id": "e08716d6578fc25cd8297db383e82001",
       "sort": 0,
-      "name": "国内频道",
+      "name": "示例频道1",
       "videoDataList": [
         {
           "id": "ddba0db4e7204e5d9e4295eb6588b2bf",
@@ -26,25 +26,18 @@
           "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8",
           "type": "Direct",
           "isLive": true
-        },
+        }
+      ]
+    },
+    {
+      "id": "e08716d6578fc25cd8297db383e82002",
+      "sort": 1,
+      "name": "示例频道2",
+      "videoDataList": [
         {
-          "id": "156f330d0c156c609dc87c9d77bc0d77",
-          "name": "CCTV-4 Asia (576p)",
-          "url": "http://210.210.155.37/qwr9ew/s/s19/index.m3u8",
-          "type": "Direct",
-          "isLive": true
-        },
-        {
-          "id": "a072fe6954466db2c94e14714a86b7c4",
-          "name": "万州三峡移民 (576p) [Not 24/7]",
-          "url": "http://123.146.162.24:8013/tslslive/PU2vzMI/hls/live_sd.m3u8",
-          "type": "Direct",
-          "isLive": true
-        },
-        {
-          "id": "c519a4c5ac648d9208cc179fc6c3332e",
-          "name": "万州影视 (576p) [Not 24/7]",
-          "url": "http://123.146.162.24:8013/tslslive/vWlnEzU/hls/live_sd.m3u8",
+          "id": "ddba0db4e7204e5d9e4295eb6588b2bf",
+          "name": "CCTV+ 1 (600p) [Not 24/7]",
+          "url": "https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8",
           "type": "Direct",
           "isLive": true
         }
