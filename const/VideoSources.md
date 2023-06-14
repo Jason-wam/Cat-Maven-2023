@@ -99,7 +99,7 @@ Uri：设备本地文件，content或file路径地址
 ```
 规则              ->>>  "host:www.baidu.com > contain:video > end:.mp4"
 匹配对应媒体链接  ->>>  https://www.baidu.com/video/VZ8y4bATlx07MWiZlXuo0104120j4ZMY0E070.mp4
-规则解析          ->>>  链接域名必须是www.baidu.com，链接必须包含video，链接必须包含.mp4
+规则解析          ->>>  链接域名必须是www.baidu.com，链接必须包含video，链接必须以 .mp4 结尾
 ```
 ###### 规则解释
 ```
@@ -107,7 +107,7 @@ host:      ->>匹配指定域名
 start:     ->>匹配指定开头
 end:       ->>匹配指定结尾
 contain:   ->>匹配包含指定字符串
-clear:     ->> <clear: 字符串,clear: 正则表达式，用于清除指定字符串，如果放在开头则匹配清除后的链接，如果放在结尾则清除匹配到的链接中的指定字符串>
+clear:     ->>用于清除指定字符串，如果放在开头则匹配清除后的链接，如果放在结尾则清除匹配到的链接中的指定字符串，支持正则表达式。
 
 !host:     ->>排除指定域名
 !start:    ->>排除指定开头
@@ -115,8 +115,8 @@ clear:     ->> <clear: 字符串,clear: 正则表达式，用于清除指定字�
 !contain:  ->>排除包含指定字符串
 
 PS: 每个规则必须以 > 号分割
-PS: 软件优先执行嗅探规则，如果没有填写规则软件将自动匹配媒体
+PS: 软件优先执行嗅探规则，如果没有填写规则，软件将自动匹配媒体
 
-//每个规则都可以是多次使用的，例如可以是多个contain ->>> contain:video.weibocdn.com > contain:.mp4
+//每个规则都可以是多次使用的，例如可以是多个contain， contain:video.weibocdn.com > contain:.mp4
 //规则也可以加上!<小写感叹号>号取反：例如 ->> !contain ,代表不能包含指定字符串。!end ,代表不能以某字符串开头，!host排除指定域名
 ```
