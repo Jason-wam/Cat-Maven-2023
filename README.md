@@ -10,6 +10,6 @@
 
 #### 教程文档
 
-[创建音频源示例](https://github.com/Jason-wam/Cat-Maven-2023/blob/main/const/AudioSources.md)
+[创建音频源示例](https://jason-wam.github.io/Cat-Maven-2023/const/AudioSources)
 
-[创建视频源示例](https://github.com/Jason-wam/Cat-Maven-2023/blob/main/const/VideoSources.md)
+[创建视频源示例](https://jason-wam.github.io/Cat-Maven-2023/const/VideoSources)
