@@ -3,7 +3,7 @@
 	"name": "站源订阅示例",
 	"mac": [
 		{
-			"id": "www.kuaibozy.com",
+			"id": "kuaibozy_demo",
 			"name": "快播资源网",
 			"charset": "utf-8",
 			"summary": "修订日期：2022-03-03",
@@ -27,7 +27,7 @@
 			]
 		},
 		{
-			"id": "subocaiji.com",
+			"id": "subocaiji_demo",
 			"name": "速播资源网",
 			"charset": "utf-8",
 			"summary": "修订日期：2022-03-03",
@@ -53,7 +53,7 @@
 	],
 	"web": [
 		{
-			"id": "sakura-comic",
+			"id": "sakuracomic_demo",
 			"sort": 32,
 			"host": "http://www.yinghuacd.com/",
 			"name": "樱花动漫",
@@ -86,7 +86,7 @@
 			]
 		},
 		{
-			"id": "agecomic",
+			"id": "agecomic_demo",
 			"sort": 33,
 			"host": "https://web.age-spa.com:8443/#/",
 			"name": "AGE动漫",
