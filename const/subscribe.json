@@ -1,0 +1,154 @@
+{
+	"id": "subscribe_demo",
+	"name": "站源订阅示例",
+	"mac": [
+		{
+			"id": "www.kuaibozy.com",
+			"name": "快播资源网",
+			"charset": "utf-8",
+			"summary": "修订日期：2022-03-03",
+			"api": "https://www.kuaibozy.com/api.php/provide/vod/at/xml",
+			"sort": 30,
+			"usePCUserAgent": true,
+			"dtEntities": [
+				{
+					"id": "kbm3u8",
+					"sort": 0,
+					"name": "在线播放",
+					"type": "Direct",
+					"canDownload": true
+				},
+				{
+					"id": "kbzy",
+					"sort": 1,
+					"name": "云播放",
+					"type": "WebView"
+				}
+			]
+		},
+		{
+			"id": "subocaiji.com",
+			"name": "速播资源网",
+			"charset": "utf-8",
+			"summary": "修订日期：2022-03-03",
+			"api": "https://subocaiji.com/api.php/provide/vod/at/xml",
+			"sort": 31,
+			"usePCUserAgent": true,
+			"dtEntities": [
+				{
+					"id": "subm3u8",
+					"sort": 0,
+					"name": "在线播放",
+					"type": "Direct",
+					"canDownload": true
+				},
+				{
+					"id": "subyun",
+					"sort": 1,
+					"name": "云播放",
+					"type": "WebView"
+				}
+			]
+		}
+	],
+	"web": [
+		{
+			"id": "sakura-comic",
+			"sort": 32,
+			"host": "http://www.yinghuacd.com/",
+			"name": "樱花动漫",
+			"charset": "utf-8",
+			"summary": "修订日期：2022-03-03",
+			"searchUrl": "search/{wd}/?page={pg}",
+			"resListRule": "div.lpic > ul > li",
+			"resNameRule": "h2 > a > @text",
+			"resNoteRule": "span > @index(0) > @text",
+			"resCoverRule": "a > img > @attr(src)",
+			"resDetailUrlRule": "h2 > a > @attr(href)",
+			"detailNameRule": "h1 > @text",
+			"detailDateRule": "div.sinfo > span:nth-child(1) > a > @text",
+			"detailTypeRule": "div.sinfo > span:nth-child(3) > a > @text",
+			"detailAreaRule": "div.sinfo > span:nth-child(2) > a > @text",
+			"detailNoteRule": "div.sinfo > p > @text",
+			"detailCoverRule": "div.thumb.l > img > @attr(src)",
+			"detailDescriptionRule": "div.info > @text",
+			"playRuleEntities": [
+				{
+					"id": "0",
+					"sort": 0,
+					"name": "播放列表",
+					"itemListRule": "div.movurl > ul > li",
+					"itemNameRule": "a > @text",
+					"itemURLRule": "a > @attr(href)",
+					"type": "Regex",
+					"regexURLFinder": "data-vid=\"(.*?)\\$"
+				}
+			]
+		},
+		{
+			"id": "agecomic",
+			"sort": 33,
+			"host": "https://web.age-spa.com:8443/#/",
+			"name": "AGE动漫",
+			"charset": "utf-8",
+			"summary": "修订日期：2022-04-29",
+			"searchUrl": "https://v2.age-api.com:8443/v2/search?page={pg}&query={wd}",
+			"resListRule": "@JSON:AniPreL[*]",
+			"resNameRule": "@JSON:R动画名称",
+			"resDateRule": "@JSON:R首播时间",
+			"resNoteRule": "@JSON:R新番标题",
+			"resCoverRule": "@JSON:R封面图小",
+			"resDetailUrlRule": "@JSON:AID",
+			"resDetailUrlPrefix": "https://v2.age-api.com:8443/v2/detail/",
+			"detailNameRule": "@JSON:AniInfo.R动画名称",
+			"detailDateRule": "@JSON:AniInfo.R更新时间str",
+			"detailTypeRule": "@JSON:AniInfo.R剧情类型",
+			"detailAreaRule": "@JSON:AniInfo.R地区",
+			"detailNoteRule": "@JSON:AniInfo.R播放状态",
+			"detailCoverRule": "@JSON:AniInfo.R封面图",
+			"detailDescriptionRule": "@JSON:AniInfo.R简介_br",
+			"playRuleEntities": [
+				{
+					"id": "0",
+					"sort": 0,
+					"name": "播放列表",
+					"itemListRule": "@JSON:AniInfo.R在线播放All[*]",
+					"itemNameRule": "@JSON:Title",
+					"itemURLRule": "@JSON:PlayVid",
+					"prefix": "https://zj.shankuwang.com:8443/?url=",
+					"type": "Sniff"
+				},
+				{
+					"id": "1",
+					"sort": 1,
+					"name": "播放列表1",
+					"itemListRule": "@JSON:AniInfo.R在线播放All[1]",
+					"itemNameRule": "@JSON:Title",
+					"itemURLRule": "@JSON:PlayVid",
+					"prefix": "https://zj.shankuwang.com:8443/?url=",
+					"type": "Sniff"
+				},
+				{
+					"id": "2",
+					"sort": 2,
+					"name": "播放列表2",
+					"itemListRule": "@JSON:AniInfo.R在线播放All[2]",
+					"itemNameRule": "@JSON:Title",
+					"itemURLRule": "@JSON:PlayVid",
+					"prefix": "https://zj.shankuwang.com:8443/?url=",
+					"type": "Sniff"
+				},
+				{
+					"id": "3",
+					"sort": 3,
+					"name": "播放列表3",
+					"itemListRule": "@JSON:AniInfo.R在线播放All[3]",
+					"itemNameRule": "@JSON:Title",
+					"itemURLRule": "@JSON:PlayVid",
+					"prefix": "https://zj.shankuwang.com:8443/?url=",
+					"type": "Sniff"
+				}
+			]
+		}
+	]
+}
