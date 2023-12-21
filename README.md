@@ -11,6 +11,10 @@
 
 #### 教程文档
 
+[站源订阅示例](https://raw.githubusercontent.com/Jason-wam/Cat-Maven-2023/main/const/subscribe.json)
+
 [创建音频源示例](https://jason-wam.github.io/Cat-Maven-2023/const/AudioSources)
 
 [创建视频源示例](https://jason-wam.github.io/Cat-Maven-2023/const/VideoSources)
+
+
