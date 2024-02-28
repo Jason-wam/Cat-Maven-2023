@@ -4,7 +4,7 @@
 
 #### 更新下载地址
 
-资源猫手机版更新地址：[资源猫手机版](https://xswl.lanzouw.com/b017aleih)
+资源猫手机版更新地址：[资源猫手机版](https://xswl.lanzn.com/b01a19ryd)
 
 资源猫HD版[平板版]更新地址：[资源猫HD](https://xswl.lanzouw.com/b018x5jfc)
 
