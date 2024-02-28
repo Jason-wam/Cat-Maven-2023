@@ -1,5 +1,5 @@
 ### 软件使用中遇到问题或建议请在Issue提交错误日志或具体遇到的问题
-[提交问题](https://github.com/Jason-wam/Cat-Maven-2023/issues)
+[提交问题](https://github.com/Jason-wam/Cat-Maven-2023/issues/new/choose)
 
 
 #### 更新下载地址
