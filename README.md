@@ -6,9 +6,9 @@
 
 #### 网盘更新下载地址
 
-资源猫手机版更新地址：[资源猫手机版](https://xswl.lanzn.com/b01a19ryd)
+资源猫更新地址：[蓝奏云](https://xswl.lanzn.com/b01a19ryd)
 
-资源猫HD版[平板版]更新地址：[资源猫HD](https://xswl.lanzouw.com/b018x5jfc)
+资源猫更新地址：[123云盘](https://www.123684.com/s/n8kKVv-BX2kv)
 
 
 #### 教程文档
