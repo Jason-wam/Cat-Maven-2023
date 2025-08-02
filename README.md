@@ -6,7 +6,7 @@
 
 #### 网盘更新下载地址
 
-资源猫更新地址：[蓝奏云](https://xswl.lanzn.com/b01a19ryd)
+资源猫更新地址：[蓝奏云](https://xswl.lanzouu.com/b017aleih)
 
 资源猫更新地址：[123云盘](https://www.123684.com/s/n8kKVv-BX2kv)
 
