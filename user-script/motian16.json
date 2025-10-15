@@ -1,0 +1,54 @@
+{
+  "id": "motian16",
+  "name": "motian16",
+  "mac": [],
+  "web": [
+    {
+      "id": "hanime-1",
+      "sort": 0,
+      "host": "https:\/\/hanime1.me\/",
+      "name": "Hanime1 - R18",
+      "charset": "utf-8",
+      "summary": "修订日期：2025-10-16",
+      "recommend": false,
+      "searchUrl": "\/search?query={wd}&page=1",
+      "resListRule": "#home-rows-wrapper > div.content-padding-new > div > div.col-xs-6",
+      "resNameRule": "div.card-mobile-title > @text",
+      "resDateRule": "",
+      "resNoteRule": "div.card-mobile-genre-wrapper > a > @text",
+      "resCoverRule": "",
+      "resActorRule": "",
+      "resDirectorRule": "",
+      "resDetailUrlRule": "a > @attr(href)",
+      "resDetailUrlPrefix": "",
+      "detailNameRule": "meta[name=title]>@attr(content)",
+      "detailDateRule": "",
+      "detailTypeRule": "",
+      "detailAreaRule": "",
+      "detailLangRule": "",
+      "detailNoteRule": "#player-div-wrapper > div:nth-child(13) > div > div.hidden-xs > @text",
+      "detailActorRule": "",
+      "detailCoverRule": "meta[name=image]>@attr(content)",
+      "detailCoverPrefix": "",
+      "detailDirectorRule": "",
+      "detailDescriptionRule": "meta[name=description]>@attr(content)",
+      "randomPCUserAgent": true,
+      "playRuleEntities": [
+        {
+          "id": "0",
+          "sort": 0,
+          "name": "播放列表",
+          "itemListRule": "head>link[as=video]",
+          "itemNameRule": "link>@attr(as)",
+          "itemURLRule": "link>@attr(href)",
+          "proxy": "",
+          "prefix": "",
+          "type": "Direct",
+          "canDownload": false,
+          "isLive": false,
+          "regexURLFinder": ""
+        }
+      ]
+    }
+  ]
+}
