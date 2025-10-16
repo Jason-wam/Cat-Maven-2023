@@ -44,7 +44,7 @@
           "proxy": "",
           "prefix": "",
           "type": "Direct",
-          "canDownload": false,
+          "canDownload": true,
           "isLive": false,
           "regexURLFinder": ""
         }
