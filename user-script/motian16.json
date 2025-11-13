@@ -28,7 +28,7 @@
       "detailLangRule": "",
       "detailNoteRule": "#player-div-wrapper > div:nth-child(13) > div > div.hidden-xs > @text",
       "detailActorRule": "",
-      "detailCoverRule": "meta[name=image]>@attr(content)",
+      "detailCoverRule": "meta[property=og:image]>@attr(content)",
       "detailCoverPrefix": "",
       "detailDirectorRule": "",
       "detailDescriptionRule": "meta[name=description]>@attr(content)",
