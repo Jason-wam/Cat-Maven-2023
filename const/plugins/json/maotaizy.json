@@ -1,0 +1,237 @@
+{
+  "id": "maotaizy",
+  "api": "https://caiji.maotaizy.cc/api.php/provide/vod/",
+  "name": "茅台资源网",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://caiji.maotaizy.cc/favicon.ico",
+  "description": "茅台资源网,每日更新,播放地址为美国cdn,视频有水印广告,速度自测",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "mtm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    },
+    {
+      "id": "mtyun",
+      "name": "云播放",
+      "weight": 1,
+      "videoType": "Sniff"
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "37",
+      "title": "短剧大全",
+      "weight": 0
+    },
+    {
+      "url": "2",
+      "title": "连续剧",
+      "weight": 1
+    },
+    {
+      "url": "3",
+      "title": "综艺片",
+      "weight": 2
+    },
+    {
+      "url": "4",
+      "title": "动漫",
+      "weight": 3
+    },
+    {
+      "url": "5",
+      "title": "纪录片",
+      "weight": 4
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 5
+    },
+    {
+      "url": "7",
+      "title": "爱情片",
+      "weight": 6
+    },
+    {
+      "url": "8",
+      "title": "喜剧片",
+      "weight": 7
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 8
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 9
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 10
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 11
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 12
+    },
+    {
+      "url": "14",
+      "title": "香港剧",
+      "weight": 13
+    },
+    {
+      "url": "16",
+      "title": "韩剧",
+      "weight": 15
+    },
+    {
+      "url": "20",
+      "title": "动漫电影",
+      "weight": 16
+    },
+    {
+      "url": "21",
+      "title": "泰国剧",
+      "weight": 17
+    },
+    {
+      "url": "22",
+      "title": "日本剧",
+      "weight": 18
+    },
+    {
+      "url": "23",
+      "title": "台湾剧",
+      "weight": 19
+    },
+    {
+      "url": "24",
+      "title": "海外剧",
+      "weight": 20
+    },
+    {
+      "url": "25",
+      "title": "大陆综艺",
+      "weight": 21
+    },
+    {
+      "url": "26",
+      "title": "日韩综艺",
+      "weight": 22
+    },
+    {
+      "url": "27",
+      "title": "港台综艺",
+      "weight": 23
+    },
+    {
+      "url": "28",
+      "title": "欧美综艺",
+      "weight": 24
+    },
+    {
+      "url": "30",
+      "title": "国产动漫",
+      "weight": 26
+    },
+    {
+      "url": "31",
+      "title": "日本动漫",
+      "weight": 27
+    },
+    {
+      "url": "32",
+      "title": "欧美动漫",
+      "weight": 28
+    },
+    {
+      "url": "33",
+      "title": "海外动漫",
+      "weight": 29
+    },
+    {
+      "url": "36",
+      "title": "体育赛事",
+      "weight": 31
+    },
+    {
+      "url": "38",
+      "title": "篮球",
+      "weight": 33
+    },
+    {
+      "url": "39",
+      "title": "足球",
+      "weight": 34
+    },
+    {
+      "url": "40",
+      "title": "网球",
+      "weight": 35
+    },
+    {
+      "url": "41",
+      "title": "斯诺克",
+      "weight": 36
+    },
+    {
+      "url": "43",
+      "title": "重生民国",
+      "weight": 38
+    },
+    {
+      "url": "44",
+      "title": "穿越现代",
+      "weight": 39
+    },
+    {
+      "url": "45",
+      "title": "反转爽剧",
+      "weight": 40
+    },
+    {
+      "url": "46",
+      "title": "言情总裁",
+      "weight": 41
+    },
+    {
+      "url": "47",
+      "title": "现代都市",
+      "weight": 42
+    },
+    {
+      "url": "48",
+      "title": "古装仙侠",
+      "weight": 43
+    },
+    {
+      "url": "49",
+      "title": "悬疑烧脑",
+      "weight": 44
+    },
+    {
+      "url": "50",
+      "title": "惊悚片",
+      "weight": 45
+    }
+  ]
+}

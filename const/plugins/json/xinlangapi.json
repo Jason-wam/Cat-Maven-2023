@@ -1,0 +1,157 @@
+{
+  "id": "xinlangapi",
+  "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+  "name": "新浪资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.xinlangapi.com/favicon.ico",
+  "description": "新浪资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "xlm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    },
+    {
+      "id": "xlyun",
+      "name": "云播放",
+      "weight": 1,
+      "videoType": "Sniff"
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "24",
+      "title": "短剧",
+      "weight": 1
+    },
+    {
+      "url": "3",
+      "title": "动漫",
+      "weight": 4
+    },
+    {
+      "url": "4",
+      "title": "综艺",
+      "weight": 5
+    },
+    {
+      "url": "5",
+      "title": "纪录片",
+      "weight": 6
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 7
+    },
+    {
+      "url": "7",
+      "title": "爱情片",
+      "weight": 8
+    },
+    {
+      "url": "8",
+      "title": "科幻片",
+      "weight": 9
+    },
+    {
+      "url": "9",
+      "title": "战争片",
+      "weight": 10
+    },
+    {
+      "url": "10",
+      "title": "剧情片",
+      "weight": 11
+    },
+    {
+      "url": "11",
+      "title": "恐怖片",
+      "weight": 12
+    },
+    {
+      "url": "12",
+      "title": "喜剧片",
+      "weight": 13
+    },
+    {
+      "url": "13",
+      "title": "大陆剧",
+      "weight": 14
+    },
+    {
+      "url": "14",
+      "title": "港澳剧",
+      "weight": 15
+    },
+    {
+      "url": "15",
+      "title": "台湾剧",
+      "weight": 16
+    },
+    {
+      "url": "16",
+      "title": "欧美剧",
+      "weight": 17
+    },
+    {
+      "url": "17",
+      "title": "动画片",
+      "weight": 18
+    },
+    {
+      "url": "18",
+      "title": "韩剧",
+      "weight": 19
+    },
+    {
+      "url": "20",
+      "title": "日剧",
+      "weight": 20
+    },
+    {
+      "url": "21",
+      "title": "泰剧",
+      "weight": 21
+    },
+    {
+      "url": "23",
+      "title": "体育",
+      "weight": 23
+    },
+    {
+      "url": "25",
+      "title": "预告片",
+      "weight": 24
+    },
+    {
+      "url": "26",
+      "title": "足球",
+      "weight": 25
+    },
+    {
+      "url": "27",
+      "title": "篮球",
+      "weight": 26
+    },
+    {
+      "url": "28",
+      "title": "台球",
+      "weight": 27
+    },
+    {
+      "url": "29",
+      "title": "其他赛事",
+      "weight": 28
+    }
+  ]
+}

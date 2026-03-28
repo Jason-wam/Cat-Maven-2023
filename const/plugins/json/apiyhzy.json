@@ -1,0 +1,151 @@
+{
+  "id": "apiyhzy",
+  "api": "https://m3u8.apiyhzy.com/api.php/provide/vod/",
+  "name": "樱花资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://m3u8.apiyhzy.com/favicon.ico",
+  "description": "樱花资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": false,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "yhm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 4
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 5
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 6
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 7
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 8
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 9
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 10
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 11
+    },
+    {
+      "url": "14",
+      "title": "香港剧",
+      "weight": 12
+    },
+    {
+      "url": "15",
+      "title": "台湾剧",
+      "weight": 13
+    },
+    {
+      "url": "16",
+      "title": "韩国剧",
+      "weight": 14
+    },
+    {
+      "url": "20",
+      "title": "犯罪片",
+      "weight": 15
+    },
+    {
+      "url": "21",
+      "title": "纪录片",
+      "weight": 16
+    },
+    {
+      "url": "22",
+      "title": "动画电影",
+      "weight": 17
+    },
+    {
+      "url": "23",
+      "title": "日本剧",
+      "weight": 18
+    },
+    {
+      "url": "24",
+      "title": "欧美剧",
+      "weight": 19
+    },
+    {
+      "url": "25",
+      "title": "海外剧",
+      "weight": 20
+    },
+    {
+      "url": "26",
+      "title": "大陆综艺",
+      "weight": 21
+    },
+    {
+      "url": "27",
+      "title": "日韩综艺",
+      "weight": 22
+    },
+    {
+      "url": "28",
+      "title": "港台综艺",
+      "weight": 23
+    },
+    {
+      "url": "29",
+      "title": "欧美综艺",
+      "weight": 24
+    },
+    {
+      "url": "30",
+      "title": "国产动漫",
+      "weight": 25
+    },
+    {
+      "url": "31",
+      "title": "日本动漫",
+      "weight": 26
+    },
+    {
+      "url": "32",
+      "title": "欧美动漫",
+      "weight": 27
+    },
+    {
+      "url": "33",
+      "title": "海外动漫",
+      "weight": 28
+    }
+  ]
+}

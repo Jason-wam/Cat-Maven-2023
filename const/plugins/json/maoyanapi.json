@@ -1,0 +1,186 @@
+{
+  "id": "maoyanapi",
+  "api": "https://api.maoyanapi.top/api.php/provide/vod/",
+  "name": "猫眼资源网",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.maoyanapi.top/favicon.ico",
+  "description": "猫眼资源网,每日更新,播放地址为韩国ip,视频无水印广告,速度自测",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "mym3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "47",
+      "title": "短剧",
+      "weight": 1
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 5
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 7
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 8
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 9
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 10
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 11
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 12
+    },
+    {
+      "url": "14",
+      "title": "香港剧",
+      "weight": 13
+    },
+    {
+      "url": "15",
+      "title": "韩国剧",
+      "weight": 14
+    },
+    {
+      "url": "16",
+      "title": "欧美剧",
+      "weight": 15
+    },
+    {
+      "url": "18",
+      "title": "NBA",
+      "weight": 17
+    },
+    {
+      "url": "20",
+      "title": "惊悚片",
+      "weight": 18
+    },
+    {
+      "url": "21",
+      "title": "家庭篇",
+      "weight": 19
+    },
+    {
+      "url": "22",
+      "title": "古装片",
+      "weight": 20
+    },
+    {
+      "url": "23",
+      "title": "历史片",
+      "weight": 21
+    },
+    {
+      "url": "24",
+      "title": "悬疑片",
+      "weight": 22
+    },
+    {
+      "url": "25",
+      "title": "犯罪片",
+      "weight": 23
+    },
+    {
+      "url": "26",
+      "title": "灾难片",
+      "weight": 24
+    },
+    {
+      "url": "27",
+      "title": "纪录片",
+      "weight": 25
+    },
+    {
+      "url": "28",
+      "title": "短片",
+      "weight": 26
+    },
+    {
+      "url": "29",
+      "title": "动画片",
+      "weight": 27
+    },
+    {
+      "url": "30",
+      "title": "台湾剧",
+      "weight": 28
+    },
+    {
+      "url": "31",
+      "title": "日本剧",
+      "weight": 29
+    },
+    {
+      "url": "33",
+      "title": "泰国剧",
+      "weight": 31
+    },
+    {
+      "url": "34",
+      "title": "大陆综艺",
+      "weight": 32
+    },
+    {
+      "url": "36",
+      "title": "日韩综艺",
+      "weight": 34
+    },
+    {
+      "url": "38",
+      "title": "国产动漫",
+      "weight": 36
+    },
+    {
+      "url": "39",
+      "title": "欧美动漫",
+      "weight": 37
+    },
+    {
+      "url": "40",
+      "title": "日韩动漫",
+      "weight": 38
+    },
+    {
+      "url": "45",
+      "title": "西部片",
+      "weight": 42
+    },
+    {
+      "url": "54",
+      "title": "奇幻片",
+      "weight": 51
+    }
+  ]
+}

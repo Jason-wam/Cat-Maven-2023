@@ -1,0 +1,241 @@
+{
+  "id": "apibdzy",
+  "api": "https://api.apibdzy.com/api.php/provide/vod/?ac=list",
+  "name": "百度资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.apibdzy.com/favicon.ico",
+  "description": "BD资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "dbm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "54",
+      "title": "爽文短剧",
+      "weight": 1
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 6
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 7
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 8
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 9
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 10
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 11
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 12
+    },
+    {
+      "url": "13",
+      "title": "大陆剧",
+      "weight": 13
+    },
+    {
+      "url": "14",
+      "title": "欧美剧",
+      "weight": 14
+    },
+    {
+      "url": "15",
+      "title": "韩剧",
+      "weight": 15
+    },
+    {
+      "url": "16",
+      "title": "日剧",
+      "weight": 16
+    },
+    {
+      "url": "17",
+      "title": "港澳剧",
+      "weight": 17
+    },
+    {
+      "url": "18",
+      "title": "台湾剧",
+      "weight": 18
+    },
+    {
+      "url": "19",
+      "title": "泰剧",
+      "weight": 19
+    },
+    {
+      "url": "20",
+      "title": "纪录片",
+      "weight": 20
+    },
+    {
+      "url": "23",
+      "title": "其他剧",
+      "weight": 21
+    },
+    {
+      "url": "25",
+      "title": "大陆综艺",
+      "weight": 22
+    },
+    {
+      "url": "26",
+      "title": "日韩综艺",
+      "weight": 23
+    },
+    {
+      "url": "27",
+      "title": "港台综艺",
+      "weight": 24
+    },
+    {
+      "url": "28",
+      "title": "欧美综艺",
+      "weight": 25
+    },
+    {
+      "url": "29",
+      "title": "国产动漫",
+      "weight": 26
+    },
+    {
+      "url": "30",
+      "title": "日韩动漫",
+      "weight": 27
+    },
+    {
+      "url": "31",
+      "title": "欧美动漫",
+      "weight": 28
+    },
+    {
+      "url": "39",
+      "title": "动画电影",
+      "weight": 29
+    },
+    {
+      "url": "44",
+      "title": "港台动漫",
+      "weight": 30
+    },
+    {
+      "url": "45",
+      "title": "海外动漫",
+      "weight": 31
+    },
+    {
+      "url": "47",
+      "title": "演唱会",
+      "weight": 32
+    },
+    {
+      "url": "48",
+      "title": "体育赛事",
+      "weight": 33
+    },
+    {
+      "url": "49",
+      "title": "篮球",
+      "weight": 34
+    },
+    {
+      "url": "50",
+      "title": "足球",
+      "weight": 35
+    },
+    {
+      "url": "51",
+      "title": "预告片",
+      "weight": 36
+    },
+    {
+      "url": "52",
+      "title": "斯诺克",
+      "weight": 37
+    },
+    {
+      "url": "53",
+      "title": "影视解说",
+      "weight": 38
+    },
+    {
+      "url": "62",
+      "title": "4K电影",
+      "weight": 46
+    },
+    {
+      "url": "63",
+      "title": "有声动漫",
+      "weight": 47
+    },
+    {
+      "url": "64",
+      "title": "女频恋爱",
+      "weight": 48
+    },
+    {
+      "url": "65",
+      "title": "反转爽剧",
+      "weight": 49
+    },
+    {
+      "url": "66",
+      "title": "古装仙侠",
+      "weight": 50
+    },
+    {
+      "url": "67",
+      "title": "年代穿越",
+      "weight": 51
+    },
+    {
+      "url": "68",
+      "title": "脑洞悬疑",
+      "weight": 52
+    },
+    {
+      "url": "69",
+      "title": "现代都市",
+      "weight": 53
+    },
+    {
+      "url": "70",
+      "title": "邵氏电影",
+      "weight": 54
+    }
+  ]
+}

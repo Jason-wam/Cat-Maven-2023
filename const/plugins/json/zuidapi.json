@@ -1,0 +1,231 @@
+{
+  "id": "zuidapi",
+  "api": "https://api.zuidapi.com/api.php/provide/vod/",
+  "name": "最大资源网",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.zuidapi.com/favicon.ico",
+  "description": "最大资源网,提供丰富多样的影视内容,包括电影、电视剧、动漫、综艺、纪录片、演唱会、体育赛事等多种类型,支持分类浏览和搜索,每日更新,速度自测",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "zuidam3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "54",
+      "title": "爽文短剧",
+      "weight": 1
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 2
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 3
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 4
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 5
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 6
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 7
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 8
+    },
+    {
+      "url": "14",
+      "title": "欧美剧",
+      "weight": 9
+    },
+    {
+      "url": "15",
+      "title": "韩剧",
+      "weight": 10
+    },
+    {
+      "url": "16",
+      "title": "日剧",
+      "weight": 11
+    },
+    {
+      "url": "18",
+      "title": "台剧",
+      "weight": 12
+    },
+    {
+      "url": "20",
+      "title": "纪录片",
+      "weight": 13
+    },
+    {
+      "url": "23",
+      "title": "海外剧",
+      "weight": 14
+    },
+    {
+      "url": "25",
+      "title": "大陆综艺",
+      "weight": 15
+    },
+    {
+      "url": "26",
+      "title": "日韩综艺",
+      "weight": 16
+    },
+    {
+      "url": "27",
+      "title": "港台综艺",
+      "weight": 17
+    },
+    {
+      "url": "28",
+      "title": "欧美综艺",
+      "weight": 18
+    },
+    {
+      "url": "29",
+      "title": "国产动漫",
+      "weight": 19
+    },
+    {
+      "url": "30",
+      "title": "日韩动漫",
+      "weight": 20
+    },
+    {
+      "url": "31",
+      "title": "欧美动漫",
+      "weight": 21
+    },
+    {
+      "url": "39",
+      "title": "动画片",
+      "weight": 22
+    },
+    {
+      "url": "45",
+      "title": "海外动漫",
+      "weight": 23
+    },
+    {
+      "url": "47",
+      "title": "演唱会",
+      "weight": 24
+    },
+    {
+      "url": "49",
+      "title": "篮球",
+      "weight": 25
+    },
+    {
+      "url": "50",
+      "title": "足球",
+      "weight": 26
+    },
+    {
+      "url": "51",
+      "title": "预告片",
+      "weight": 27
+    },
+    {
+      "url": "53",
+      "title": "影视解说",
+      "weight": 28
+    },
+    {
+      "url": "61",
+      "title": "写真热舞",
+      "weight": 29
+    },
+    {
+      "url": "62",
+      "title": "4K电影",
+      "weight": 30
+    },
+    {
+      "url": "63",
+      "title": "有声动漫",
+      "weight": 31
+    },
+    {
+      "url": "64",
+      "title": "女频恋爱",
+      "weight": 32
+    },
+    {
+      "url": "65",
+      "title": "反转爽剧",
+      "weight": 33
+    },
+    {
+      "url": "66",
+      "title": "古装仙侠",
+      "weight": 34
+    },
+    {
+      "url": "67",
+      "title": "年代穿越",
+      "weight": 35
+    },
+    {
+      "url": "68",
+      "title": "脑洞悬疑",
+      "weight": 36
+    },
+    {
+      "url": "69",
+      "title": "现代都市",
+      "weight": 37
+    },
+    {
+      "url": "70",
+      "title": "邵氏电影",
+      "weight": 38
+    },
+    {
+      "url": "71",
+      "title": "Netflix电影",
+      "weight": 39
+    },
+    {
+      "url": "72",
+      "title": "Netflix自制剧",
+      "weight": 40
+    },
+    {
+      "url": "74",
+      "title": "科普学习",
+      "weight": 41
+    }
+  ]
+}

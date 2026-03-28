@@ -1,0 +1,182 @@
+{
+  "id": "taopianzy",
+  "api": "https://www.taopianzy.com/cjapi/mc10/vod/json.html",
+  "name": "淘片资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://www.taopianzy.com/favicon.ico",
+  "description": "淘片资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "tpm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    },
+    {
+      "id": "tpiframe",
+      "name": "云播放",
+      "weight": 1,
+      "videoType": "Sniff"
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "15597568",
+      "title": "国产剧",
+      "weight": 1
+    },
+    {
+      "url": "15204352",
+      "title": "欧美剧",
+      "weight": 2
+    },
+    {
+      "url": "15794176",
+      "title": "韩国剧",
+      "weight": 3
+    },
+    {
+      "url": "15728640",
+      "title": "日本剧",
+      "weight": 4
+    },
+    {
+      "url": "15663104",
+      "title": "香港剧",
+      "weight": 5
+    },
+    {
+      "url": "16318464",
+      "title": "台湾剧",
+      "weight": 6
+    },
+    {
+      "url": "16121856",
+      "title": "泰国剧",
+      "weight": 7
+    },
+    {
+      "url": "15532032",
+      "title": "海外剧",
+      "weight": 8
+    },
+    {
+      "url": "14942208",
+      "title": "动作片",
+      "weight": 9
+    },
+    {
+      "url": "15007744",
+      "title": "喜剧片",
+      "weight": 10
+    },
+    {
+      "url": "14876672",
+      "title": "爱情片",
+      "weight": 11
+    },
+    {
+      "url": "15335424",
+      "title": "科幻片",
+      "weight": 12
+    },
+    {
+      "url": "14811136",
+      "title": "恐怖片",
+      "weight": 13
+    },
+    {
+      "url": "14548992",
+      "title": "剧情片",
+      "weight": 14
+    },
+    {
+      "url": "15400960",
+      "title": "战争片",
+      "weight": 15
+    },
+    {
+      "url": "15269888",
+      "title": "奇幻片",
+      "weight": 16
+    },
+    {
+      "url": "15138816",
+      "title": "冒险片",
+      "weight": 17
+    },
+    {
+      "url": "14614528",
+      "title": "惊悚片",
+      "weight": 18
+    },
+    {
+      "url": "8388608",
+      "title": "悬疑片",
+      "weight": 19
+    },
+    {
+      "url": "1179648",
+      "title": "纪录片",
+      "weight": 20
+    },
+    {
+      "url": "15073280",
+      "title": "动画片",
+      "weight": 21
+    },
+    {
+      "url": "15925248",
+      "title": "国产动漫",
+      "weight": 22
+    },
+    {
+      "url": "15859712",
+      "title": "日本动漫",
+      "weight": 23
+    },
+    {
+      "url": "15990784",
+      "title": "欧美动漫",
+      "weight": 24
+    },
+    {
+      "url": "16515072",
+      "title": "海外动漫",
+      "weight": 25
+    },
+    {
+      "url": "16056320",
+      "title": "大陆综艺",
+      "weight": 26
+    },
+    {
+      "url": "16187392",
+      "title": "港台综艺",
+      "weight": 27
+    },
+    {
+      "url": "16384000",
+      "title": "日韩综艺",
+      "weight": 28
+    },
+    {
+      "url": "16252928",
+      "title": "欧美综艺",
+      "weight": 29
+    },
+    {
+      "url": "16449536",
+      "title": "海外综艺",
+      "weight": 30
+    }
+  ]
+}
