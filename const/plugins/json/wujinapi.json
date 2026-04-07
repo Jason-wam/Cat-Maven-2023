@@ -1,0 +1,166 @@
+{
+  "id": "wujinapi",
+  "api": "https://api.wujinapi.me/api.php/provide/vod/",
+  "name": "无尽资源网",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.wujinapi.me/favicon.ico",
+  "description": "无尽资源网,播放地址为国外,资源每日更显出,速度自测",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "wjm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "62",
+      "title": "短剧",
+      "weight": 1
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 2
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 3
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 4
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 5
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 6
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 7
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 8
+    },
+    {
+      "url": "14",
+      "title": "香港剧",
+      "weight": 9
+    },
+    {
+      "url": "15",
+      "title": "台湾剧",
+      "weight": 10
+    },
+    {
+      "url": "24",
+      "title": "海外剧",
+      "weight": 11
+    },
+    {
+      "url": "26",
+      "title": "日韩综艺",
+      "weight": 12
+    },
+    {
+      "url": "30",
+      "title": "日韩动漫",
+      "weight": 13
+    },
+    {
+      "url": "31",
+      "title": "欧美动漫",
+      "weight": 14
+    },
+    {
+      "url": "33",
+      "title": "动画片",
+      "weight": 15
+    },
+    {
+      "url": "34",
+      "title": "犯罪片",
+      "weight": 16
+    },
+    {
+      "url": "36",
+      "title": "邵氏电影",
+      "weight": 17
+    },
+    {
+      "url": "37",
+      "title": "泰剧",
+      "weight": 18
+    },
+    {
+      "url": "42",
+      "title": "港台动漫",
+      "weight": 19
+    },
+    {
+      "url": "43",
+      "title": "海外动漫",
+      "weight": 20
+    },
+    {
+      "url": "44",
+      "title": "演唱会",
+      "weight": 21
+    },
+    {
+      "url": "45",
+      "title": "足球",
+      "weight": 22
+    },
+    {
+      "url": "46",
+      "title": "预告片",
+      "weight": 23
+    },
+    {
+      "url": "53",
+      "title": "有声动漫",
+      "weight": 24
+    },
+    {
+      "url": "56",
+      "title": "脑洞悬疑",
+      "weight": 25
+    },
+    {
+      "url": "61",
+      "title": "Netflix自制剧",
+      "weight": 26
+    },
+    {
+      "url": "63",
+      "title": "漫剧",
+      "weight": 27
+    },
+    {
+      "url": "64",
+      "title": "儿童儿歌",
+      "weight": 28
+    }
+  ]
+}

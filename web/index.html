@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源猫 - 视频资源聚合应用</title>
+    <link rel="icon" href="assets/app-icon.webp" type="image/webp">
+    <link rel="apple-touch-icon" href="assets/app-icon.webp">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #34a853;
+            --secondary-color: #4285f4;
+            --accent-color: #fbbc04;
+            --error-color: #ea4335;
+            --dark-color: #202124;
+            --light-color: #f8f9fa;
+            --gray-color: #5f6368;
+            --light-gray: #dadce0;
+            --divider-color: rgba(218, 220, 224, 0.3); /* 半透明分割线 */
+        }
+        
+        body {
+            font-family: 'Google Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        
+        /* 微信浏览器提示层 */
+        .wechat-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .wechat-overlay .content {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .wechat-overlay .icon {
+            font-size: 4rem;
+            color: #07C160;
+            margin-bottom: 1.5rem;
+        }
+        
+        .wechat-overlay h2 {
+            color: var(--dark-color);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .wechat-overlay p {
+            color: var(--gray-color);
+            margin-bottom: 2rem;
+        }
+        
+        .wechat-overlay .btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .wechat-overlay .btn:hover {
+            background: #2d9d4a;
+            transform: translateY(-2px);
+        }
+        
+        /* iPhone提醒 */
+        .iphone-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .iphone-overlay .content {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            text-align: center;
+            max-width: 90%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .iphone-overlay h3 {
+            color: var(--error-color);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .iphone-overlay p {
+            color: var(--gray-color);
+            margin-bottom: 2rem;
+        }
+        
+        .iphone-overlay .btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .iphone-overlay .btn:hover {
+            background: #2d9d4a;
+            transform: translateY(-2px);
+        }
+        
+        /* 应用信息区域 */
+        .app-info {
+            background: white;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--divider-color);
+        }
+        
+        .app-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+        
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            border: 1px solid var(--light-gray);
+            flex-shrink: 0;
+        }
+        
+        .app-icon img {
+            border-radius: 24px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .app-details {
+            flex: 1;
+        }
+        
+        .app-details h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+        
+        .app-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: var(--gray-color);
+            font-size: 0.9rem;
+        }
+        
+        .app-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .qrcode-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 2rem;
+        }
+        
+        .qrcode-wrapper {
+            padding: 0.2rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 12px;
+            background: white;
+        }
+        
+        .qrcode-container img {
+            width: 120px;
+            height: 120px;
+        }
+        
+        .qrcode-container p {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--gray-color);
+            text-align: center;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .app-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .qrcode-container {
+                display: none;
+            }
+        }
+        
+        .install-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(52, 168, 83, 0.3);
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .install-btn:hover {
+            background: #2d9d4a;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 168, 83, 0.4);
+            color: white;
+        }
+        
+        .share-btn {
+            background: white;
+            color: var(--dark-color);
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .share-btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-2px);
+        }
+        
+        /* 截图轮播 */
+        .screenshots {
+            padding: 3rem 0;
+            background: white;
+            border-bottom: 1px solid var(--divider-color);
+        }
+        
+        .screenshots h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .screenshot-carousel {
+            position: relative;
+        }
+        
+        .screenshot-track {
+            display: flex;
+            gap: 1rem;
+            overflow-x: auto;
+            padding-bottom: 1rem;
+            scrollbar-width: thin;
+            scrollbar-color: var(--light-gray) transparent;
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot-track::-webkit-scrollbar {
+            height: 4px;
+        }
+        
+        .screenshot-track::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        .screenshot-track::-webkit-scrollbar-thumb {
+            background-color: var(--light-gray);
+            border-radius: 2px;
+        }
+        
+        .screenshot-card {
+            flex: 0 0 280px;
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid var(--light-gray);
+        }
+        
+        .screenshot-card img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: 1px solid var(--light-gray);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+            transition: all 0.2s ease;
+        }
+        
+        .carousel-btn:hover {
+            background: #f8f9fa;
+            transform: translateY(-50%) scale(1.05);
+        }
+        
+        .carousel-btn i {
+            font-size: 1.25rem;
+            color: var(--dark-color);
+        }
+        
+        .prev-btn {
+            left: 10px;
+        }
+        
+        .next-btn {
+            right: 10px;
+        }
+        
+        .carousel-btn.hidden {
+            display: none;
+        }
+        
+        /* 应用特性 */
+        .features {
+            padding: 3rem 0;
+            background: white;
+            border-bottom: 1px solid var(--divider-color);
+        }
+        
+        .features h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--dark-color);
+        }
+        
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: #e8f5e8;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        
+        .feature-content h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: var(--dark-color);
+        }
+        
+        .feature-content p {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+        
+        /* 关于应用 */
+        .about {
+            padding: 3rem 0;
+            background: white;
+            border-bottom: 1px solid var(--divider-color);
+        }
+        
+        .about h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .about p {
+            color: var(--gray-color);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .about ul {
+            color: var(--gray-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .about li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* 相关链接 */
+        .links {
+            padding: 3rem 0;
+            background: white;
+            border-bottom: 1px solid var(--divider-color);
+        }
+        
+        .links h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: var(--dark-color);
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .link-item {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            border: 1px solid var(--light-gray);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+        }
+        
+        .link-icon {
+            width: 60px;
+            height: 60px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .link-icon i {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .link-content {
+            width: 100%;
+        }
+        
+        .link-content h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: var(--dark-color);
+        }
+        
+        .link-content p {
+            color: var(--gray-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            min-height: 4.8rem; /* 确保所有副标题高度一致，基于最多行数 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .link-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 200px;
+        }
+        
+        .link-btn:hover {
+            background: #2d9d4a;
+            transform: translateY(-2px);
+        }
+        
+        .copy-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        
+        .copy-container input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: #f8f9fa;
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+        }
+        
+        .copy-btn:hover {
+            background: #2d9d4a;
+            transform: translateY(-2px);
+        }
+        
+        /* 页脚 */
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .footer .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .footer p {
+            color: #9aa0a6;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .app-header {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .app-actions {
+                justify-content: center;
+            }
+            
+            .app-details h1 {
+                font-size: 1.5rem;
+            }
+            
+            .screenshot-card {
+                flex: 0 0 240px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .app-actions {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                width: 100%;
+            }
+            
+            .install-btn,
+            .share-btn {
+                width: 100%;
+                max-width: 200px;
+                justify-content: center;
+            }
+            
+            .link-item {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .link-icon {
+                margin-bottom: 1rem;
+            }
+            
+            .copy-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 微信浏览器提示层 -->
+    
+    <!-- 应用信息区域 -->
+    <div class="app-info">
+        <div class="container">
+            <div class="app-header">
+                <div class="app-icon">
+                    <img src="assets/app-icon.webp" alt="资源猫">
+                </div>
+                <div class="app-details">
+                    <h1>资源猫</h1>
+                    <div class="app-meta">
+                        <span>视频资源聚合应用</span>
+                        <span>•</span>
+                        <span id="versionMeta">v5.0.0</span>
+                        <span>•</span>
+                        <span>免费</span>
+                    </div>
+                    <div class="app-actions">
+                        <a href="#" class="install-btn" id="downloadBtn">
+                            <i class="fas fa-download"></i>
+                            下载安装
+                        </a>
+                        <a href="#" class="share-btn" id="shareBtn">
+                            <i class="fas fa-share-alt"></i>
+                            分享
+                        </a>
+                    </div>
+                </div>
+                <div class="qrcode-container">
+                    <div class="qrcode-wrapper">
+                        <img src="https://api.2dcode.biz/v1/create-qr-code?data=https://github.com/Jason-wam/Cat-Maven-2023/releases" alt="扫码安装">
+                    </div>
+                    <p>扫码安装</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 截图轮播 -->
+    <div class="screenshots" id="screenshots">
+        <div class="container">
+            <h2>应用截图</h2>
+            <div class="screenshot-carousel">
+                <button class="carousel-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="screenshot-track" id="screenshotTrack">
+                    <div class="screenshot-card">
+                        <img src="assets/images/screenshot2.webp">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/images/screenshot5.webp">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/images/screenshot3.webp">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/images/screenshot4.webp">
+                    </div>
+                    <div class="screenshot-card">
+                        <img src="assets/images/screenshot1.webp">
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 相关链接 -->
+    <div class="links" id="links">
+        <div class="container">
+            <h2>相关链接</h2>
+            <div class="link-grid">
+                <div class="link-item">
+                    <div class="link-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>提交问题</h3>
+                        <p>如果在使用过程中遇到问题或有建议，请提交错误日志或具体问题。</p>
+                        <a href="https://github.com/Jason-wam/Cat-Maven-2023/issues/new/choose" class="link-btn" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            前往提交
+                        </a>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <div class="link-icon">
+                        <i class="fas fa-rss"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>插件订阅地址</h3>
+                        <p>使用此地址订阅资源猫的插件更新。</p>
+                        <button class="link-btn" onclick="copyPluginUrl()">
+                            <i class="fas fa-copy"></i>
+                            复制订阅地址
+                        </button>
+                    </div>
+                </div>
+                <div class="link-item">
+                    <div class="link-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="link-content">
+                        <h3>教程文档</h3>
+                        <p>了解如何创建插件的详细教程。</p>
+                        <a href="https://github.com/Jason-wam/JarPluginDemo" class="link-btn" target="_blank">
+                            <i class="fas fa-external-link-alt"></i>
+                            查看教程
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 应用特性 -->
+    <div class="features" id="features">
+        <div class="container">
+            <h2>应用特性</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>丰富的视频资源</h3>
+                        <p>聚合多个平台的视频资源，涵盖电影、电视剧、综艺、动漫等多种类型。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>强大的搜索功能</h3>
+                        <p>支持关键词搜索，快速找到您想看的视频内容。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>流畅的播放体验</h3>
+                        <p>支持多种播放源，自动选择最佳播放线路，提供流畅的观看体验。</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>适配多种设备</h3>
+                        <p>支持手机、平板等多种设备，随时随地享受视频内容。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 关于应用 -->
+    <div class="about" id="about">
+        <div class="container">
+            <h2>关于此应用</h2>
+            <p>资源猫是一款功能强大的视频资源聚合应用，致力于为用户提供丰富的视频内容和流畅的观看体验。</p>
+            <p>通过聚合多个平台的视频资源，资源猫让您无需在多个应用之间切换，即可享受海量视频内容。支持电影、电视剧、综艺、动漫等多种类型，满足您的不同需求。</p>
+            <p>应用特色：</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li>聚合多个平台的视频资源</li>
+                <li>强大的搜索功能，快速找到想看的内容</li>
+                <li>支持多种播放源，自动选择最佳线路</li>
+                <li>简洁美观的界面，流畅的用户体验</li>
+                <li>定期更新，持续优化</li>
+            </ul>
+            <p>更新日期：2026年4月6日</p>
+            <p>支持 Android 5.0 及以上版本</p>
+        </div>
+    </div>
+    
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="container">
+            <p>© 2026 资源猫 - 视频资源聚合应用</p>
+        </div>
+    </div>
+    
+    <script>
+        // 从GitHub API获取最新版本信息
+        async function fetchLatestRelease() {
+            console.log('开始获取版本信息...');
+            try {
+                const response = await fetch('https://api.github.com/repos/Jason-wam/Cat-Maven-2023/releases/latest');
+                console.log('API响应状态:', response.status);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch release info');
+                }
+                
+                const release = await response.json();
+                console.log('获取到的版本信息:', release);
+                
+                // 查找APK下载链接
+                const apkAsset = release.assets.find(asset => asset.name.endsWith('.apk'));
+                console.log('找到的APK资产:', apkAsset);
+                if (apkAsset) {
+                    // 更新下载按钮链接
+                    const downloadBtn = document.getElementById('downloadBtn');
+                    console.log('设置下载链接:', apkAsset.browser_download_url);
+                    // 使用gh.llkk.cc代理
+                    const proxyUrl = `https://gh.llkk.cc/${apkAsset.browser_download_url}`;
+                    downloadBtn.href = proxyUrl;
+                    
+                    // 更新二维码链接
+                    const qrCodeImg = document.querySelector('.qrcode-container img');
+                    if (qrCodeImg) {
+                        qrCodeImg.src = `https://api.2dcode.biz/v1/create-qr-code?data=${encodeURIComponent(proxyUrl)}`;
+                    }
+                    
+                    // 更新app-meta中的版本信息
+                    const versionMeta = document.getElementById('versionMeta');
+                    if (versionMeta) {
+                        versionMeta.textContent = release.tag_name;
+                    }
+                }
+            } catch (error) {
+                console.error('Error fetching release info:', error);
+                // 失败时使用默认链接
+                const downloadBtn = document.getElementById('downloadBtn');
+                console.log('使用默认下载链接');
+                const defaultUrl = 'https://gh.llkk.cc/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
+                downloadBtn.href = defaultUrl;
+                
+                // 更新二维码为默认链接
+                const qrCodeImg = document.querySelector('.qrcode-container img');
+                if (qrCodeImg) {
+                    qrCodeImg.src = `https://api.2dcode.biz/v1/create-qr-code?data=${encodeURIComponent(defaultUrl)}`;
+                }
+            }
+        }
+        
+        // 页面加载时获取版本信息
+        window.onload = fetchLatestRelease;
+        
+        // 页面加载完成后立即设置默认链接，确保按钮始终可点击
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM加载完成，设置默认下载链接');
+            const downloadBtn = document.getElementById('downloadBtn');
+            const defaultUrl = 'https://gh.llkk.cc/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
+            downloadBtn.href = defaultUrl;
+            
+            // 设置二维码默认链接
+            const qrCodeImg = document.querySelector('.qrcode-container img');
+            if (qrCodeImg) {
+                qrCodeImg.src = `https://api.2dcode.biz/v1/create-qr-code?data=${encodeURIComponent(defaultUrl)}`;
+            }
+            
+            // 初始化轮播功能
+            initCarousel();
+            
+            // 为分享按钮添加点击事件
+            const shareBtn = document.getElementById('shareBtn');
+            if (shareBtn) {
+                shareBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    shareApp();
+                });
+            }
+        });
+        
+        // 轮播功能
+        function initCarousel() {
+            const track = document.getElementById('screenshotTrack');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            if (track) {
+                // 初始检查按钮状态
+                updateButtonVisibility();
+                
+                // 监听滚动事件
+                track.addEventListener('scroll', updateButtonVisibility);
+                
+                // 下一张
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function() {
+                        track.scrollBy({ left: 300, behavior: 'smooth' });
+                    });
+                }
+                
+                // 上一张
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function() {
+                        track.scrollBy({ left: -300, behavior: 'smooth' });
+                    });
+                }
+            }
+        }
+        
+        function updateButtonVisibility() {
+            const track = document.getElementById('screenshotTrack');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            if (track && prevBtn && nextBtn) {
+                // 检查是否可以向左滚动
+                if (track.scrollLeft === 0) {
+                    prevBtn.classList.add('hidden');
+                } else {
+                    prevBtn.classList.remove('hidden');
+                }
+                
+                // 检查是否可以向右滚动
+                if (track.scrollLeft >= track.scrollWidth - track.clientWidth - 10) {
+                    nextBtn.classList.add('hidden');
+                } else {
+                    nextBtn.classList.remove('hidden');
+                }
+            }
+        }
+        
+        // 检测微信或QQ浏览器
+        function isWeChatOrQQBrowser() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return userAgent.indexOf('micromessenger') !== -1 || 
+                   userAgent.indexOf('qqbrowser') !== -1 || 
+                   userAgent.indexOf('mqqbrowser') !== -1;
+        }
+        
+        // 显示微信浏览器提示
+        function showWeChatOverlay() {
+            const overlay = document.createElement('div');
+            overlay.className = 'wechat-overlay';
+            overlay.innerHTML = `
+                <div class="content">
+                    <div class="icon">
+                        <i class="fas fa-exclamation-circle" style="color: #f39c12;"></i>
+                    </div>
+                    <h2>请在浏览器中打开</h2>
+                    <p>当前浏览器无法直接下载APK文件，请复制链接到浏览器中打开</p>
+                    <button class="btn" onclick="copyLink()">复制链接</button>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+        
+        // 复制链接到剪贴板
+        function copyLink() {
+            const currentUrl = window.location.href;
+            navigator.clipboard.writeText(currentUrl).then(function() {
+                const overlay = document.querySelector('.wechat-overlay');
+                if (overlay) {
+                    overlay.innerHTML = `
+                        <div class="content">
+                            <div class="icon">
+                                <i class="fas fa-check-circle" style="color: #27ae60;"></i>
+                            </div>
+                            <h2>复制成功</h2>
+                            <p>链接已复制到剪贴板，请在浏览器中粘贴打开</p>
+                            <button class="btn" onclick="this.parentElement.parentElement.remove()">我知道了</button>
+                        </div>
+                    `;
+                }
+            }).catch(function(err) {
+                console.error('复制失败:', err);
+                alert('复制失败，请手动复制链接');
+            });
+        }
+        
+        // 分享功能
+        function shareApp() {
+            const url = window.location.href;
+            const title = '资源猫 - 视频资源聚合应用';
+            const text = '发现一个好用的视频资源聚合应用，快来下载试试吧！';
+            
+            // 检查是否支持Web Share API
+            if (navigator.share) {
+                // 使用系统分享功能
+                navigator.share({
+                    title: title,
+                    text: text,
+                    url: url
+                }).then(() => {
+                    console.log('分享成功');
+                }).catch((error) => {
+                    console.error('分享失败:', error);
+                    // 回退到复制链接
+                    copyShareLink(url);
+                });
+            } else {
+                // 不支持Web Share API，回退到复制链接
+                copyShareLink(url);
+            }
+        }
+        
+        // 复制分享链接
+        function copyShareLink(url) {
+            navigator.clipboard.writeText(url).then(function() {
+                alert('分享链接已复制到剪贴板，快去分享给你的朋友吧！');
+            }, function(err) {
+                console.error('无法复制链接:', err);
+                alert('复制失败，请手动复制链接');
+            });
+        }
+        
+        // 复制插件订阅地址
+        function copyPluginUrl() {
+            const pluginUrl = 'https://raw.githubusercontent.com/Jason-wam/Cat-Maven-2023/refs/heads/main/const/index.main.json';
+            navigator.clipboard.writeText(pluginUrl).then(function() {
+                alert('插件订阅地址已复制到剪贴板！');
+            }, function(err) {
+                console.error('无法复制链接:', err);
+                alert('复制失败，请手动复制链接');
+            });
+        }
+        
+        // 检测iPhone
+        function isIphone() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            return userAgent.indexOf('iphone') !== -1 || userAgent.indexOf('ipad') !== -1;
+        }
+        
+        // 显示iPhone提醒
+        function showIphoneOverlay() {
+            const overlay = document.createElement('div');
+            overlay.className = 'iphone-overlay';
+            overlay.innerHTML = `
+                <div class="content">
+                    <div class="icon">
+                        <i class="fas fa-exclamation-circle" style="color: #e74c3c;"></i>
+                    </div>
+                    <h3>不支持iPhone</h3>
+                    <p>资源猫目前仅支持Android设备，暂不支持iPhone。</p>
+                    <button class="btn" onclick="this.parentElement.parentElement.remove()">我知道了</button>
+                </div>
+            `;
+            document.body.appendChild(overlay);
+        }
+        
+        // 页面加载时检测
+        window.addEventListener('load', function() {
+            if (isWeChatOrQQBrowser()) {
+                showWeChatOverlay();
+            }
+            if (isIphone()) {
+                showIphoneOverlay();
+            }
+        });
+    </script>
+</body>
+</html>

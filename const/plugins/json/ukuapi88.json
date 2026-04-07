@@ -1,0 +1,162 @@
+{
+  "id": "ukuapi88",
+  "api": "https://api.ukuapi88.com/api.php/provide/vod/",
+  "name": "U酷资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.ukuapi88.com/favicon.ico",
+  "description": "U酷资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "ukm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    },
+    {
+      "id": "ukyun",
+      "name": "云播放",
+      "weight": 1,
+      "videoType": "Sniff"
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "32",
+      "title": "短剧",
+      "weight": 1
+    },
+    {
+      "url": "3",
+      "title": "综艺",
+      "weight": 4
+    },
+    {
+      "url": "4",
+      "title": "动漫",
+      "weight": 5
+    },
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 6
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 7
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 8
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 9
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 10
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 11
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 12
+    },
+    {
+      "url": "13",
+      "title": "国产剧",
+      "weight": 13
+    },
+    {
+      "url": "14",
+      "title": "港澳剧",
+      "weight": 14
+    },
+    {
+      "url": "15",
+      "title": "日剧",
+      "weight": 15
+    },
+    {
+      "url": "16",
+      "title": "欧美剧",
+      "weight": 16
+    },
+    {
+      "url": "20",
+      "title": "动漫电影",
+      "weight": 17
+    },
+    {
+      "url": "21",
+      "title": "台湾剧",
+      "weight": 18
+    },
+    {
+      "url": "22",
+      "title": "韩剧",
+      "weight": 19
+    },
+    {
+      "url": "23",
+      "title": "泰剧",
+      "weight": 20
+    },
+    {
+      "url": "24",
+      "title": "记录片",
+      "weight": 21
+    },
+    {
+      "url": "26",
+      "title": "资讯",
+      "weight": 23
+    },
+    {
+      "url": "27",
+      "title": "新闻资讯",
+      "weight": 24
+    },
+    {
+      "url": "28",
+      "title": "预告资讯",
+      "weight": 25
+    },
+    {
+      "url": "30",
+      "title": "影视资讯",
+      "weight": 26
+    },
+    {
+      "url": "31",
+      "title": "明星资讯",
+      "weight": 27
+    },
+    {
+      "url": "33",
+      "title": "奇幻片",
+      "weight": 28
+    },
+    {
+      "url": "34",
+      "title": "犯罪片",
+      "weight": 29
+    }
+  ]
+}

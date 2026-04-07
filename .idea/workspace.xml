@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件">
+      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const/plugins/json/wsyzyapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/plugins/json/wsyzyapi.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jason-wam&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jason-wam/Cat-Maven-2023.git&quot;,
+    &quot;accountId&quot;: &quot;4f65840f-a8ae-4ecd-88a8-0e0d1b6d333a&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3BLFXzoeIKSfa3EklIinR6E9chv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/IdeaProjects/Cat-Maven-2023/const/plugins",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins" />
+      <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins\jars" />
+      <recent name="E:\IdeaProjects\Cat-Maven-2023\const" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Cat-Maven-2023\const" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="" />
+      <created>1774260486962</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774260486962</updated>
+      <workItem from="1774260488262" duration="5085000" />
+      <workItem from="1774349195637" duration="6623000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构">
+      <option name="closed" value="true" />
+      <created>1774260685396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1774260685396</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(const): 添加插件自动安装配置选项">
+      <option name="closed" value="true" />
+      <created>1774265412077</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1774265412077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="refactor(const): 更新插件配置中的自动安装字段名称&#10;&#10;- 将所有插件配置中的 autoInstall 字段重命名为 autoInstallAtFirstLaunch&#10;- 移除 haokan 视频插件的相关配置项&#10;- 保持其他插件配置的功能属性不变">
+      <option name="closed" value="true" />
+      <created>1774352170637</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1774352170637</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor(const): 更新插件配置中的自动安装字段名称&#10;&#10;- 将所有插件配置中的 autoInstall 字段重命名为 autoInstallAtFirstLaunch&#10;- 移除 haokan 视频插件的相关配置项&#10;- 保持其他插件配置的功能属性不变">
+      <option name="closed" value="true" />
+      <created>1774356340423</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774356340423</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(const): 更新图标文件并修改配置引用&#10;&#10;- 添加新的SVG格式图标文件 index.main.260324.svg&#10;- 修改配置文件中的图标路径引用&#10;- 移除旧的WEBP格式图标文件引用">
+      <option name="closed" value="true" />
+      <created>1774359533014</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1774359533014</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docs(readme): 更新文档添加插件订阅地址&#10;&#10;- 在 README 中添加插件订阅地址章节&#10;- 提供插件订阅的 JSON 配置链接&#10;- 保留原有的问题提交和下载地址信息">
+      <option name="closed" value="true" />
+      <created>1774360131612</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774360131612</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件">
+      <option name="closed" value="true" />
+      <created>1774360210380</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774360210380</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构" />
+    <MESSAGE value="feat(const): 添加插件自动安装配置选项" />
+    <MESSAGE value="refactor(const): 更新插件配置中的自动安装字段名称&#10;&#10;- 将所有插件配置中的 autoInstall 字段重命名为 autoInstallAtFirstLaunch&#10;- 移除 haokan 视频插件的相关配置项&#10;- 保持其他插件配置的功能属性不变" />
+    <MESSAGE value="feat(const): 更新图标文件并修改配置引用&#10;&#10;- 添加新的SVG格式图标文件 index.main.260324.svg&#10;- 修改配置文件中的图标路径引用&#10;- 移除旧的WEBP格式图标文件引用" />
+    <MESSAGE value="docs(readme): 更新文档添加插件订阅地址&#10;&#10;- 在 README 中添加插件订阅地址章节&#10;- 提供插件订阅的 JSON 配置链接&#10;- 保留原有的问题提交和下载地址信息" />
+    <MESSAGE value="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件" />
+  </component>
+</project>

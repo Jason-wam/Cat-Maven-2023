@@ -1,0 +1,25 @@
+{
+  "name": "资源猫",
+  "short_name": "资源猫",
+  "description": "视频资源聚合应用",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#34a853",
+  "icons": [
+    {
+      "src": "assets/app-icon.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/app-icon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["entertainment", "video"],
+  "orientation": "portrait"
+}

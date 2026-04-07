@@ -1,0 +1,162 @@
+{
+  "id": "yzzy-api",
+  "api": "https://api.yzzy-api.com/inc/api_mac10_all.php",
+  "name": "优质资源网",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://api.yzzy-api.com/favicon.ico",
+  "description": "优质资源网,每日更新,播放地址为泛播Cloudflare,速度自测",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "1080zyk",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    },
+    {
+      "id": "zykyun",
+      "name": "云播放",
+      "weight": 1,
+      "videoType": "Sniff"
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "83",
+      "title": "短剧大全",
+      "weight": 1
+    },
+    {
+      "url": "5",
+      "title": "动作片",
+      "weight": 4
+    },
+    {
+      "url": "6",
+      "title": "喜剧片",
+      "weight": 5
+    },
+    {
+      "url": "7",
+      "title": "爱情片",
+      "weight": 6
+    },
+    {
+      "url": "8",
+      "title": "科幻片",
+      "weight": 7
+    },
+    {
+      "url": "11",
+      "title": "战争片",
+      "weight": 10
+    },
+    {
+      "url": "12",
+      "title": "国产剧",
+      "weight": 11
+    },
+    {
+      "url": "13",
+      "title": "台湾剧",
+      "weight": 12
+    },
+    {
+      "url": "17",
+      "title": "泰国剧",
+      "weight": 16
+    },
+    {
+      "url": "18",
+      "title": "日本剧",
+      "weight": 17
+    },
+    {
+      "url": "19",
+      "title": "福利",
+      "weight": 18
+    },
+    {
+      "url": "20",
+      "title": "记录片",
+      "weight": 19
+    },
+    {
+      "url": "41",
+      "title": "动画片",
+      "weight": 20
+    },
+    {
+      "url": "54",
+      "title": "海外剧",
+      "weight": 21
+    },
+    {
+      "url": "62",
+      "title": "大陆综艺",
+      "weight": 23
+    },
+    {
+      "url": "63",
+      "title": "港台综艺",
+      "weight": 24
+    },
+    {
+      "url": "64",
+      "title": "日韩综艺",
+      "weight": 25
+    },
+    {
+      "url": "65",
+      "title": "欧美综艺",
+      "weight": 26
+    },
+    {
+      "url": "66",
+      "title": "国产动漫",
+      "weight": 27
+    },
+    {
+      "url": "67",
+      "title": "日韩动漫",
+      "weight": 28
+    },
+    {
+      "url": "68",
+      "title": "欧美动漫",
+      "weight": 29
+    },
+    {
+      "url": "78",
+      "title": "搞笑",
+      "weight": 32
+    },
+    {
+      "url": "80",
+      "title": "影视",
+      "weight": 34
+    },
+    {
+      "url": "81",
+      "title": "汽车",
+      "weight": 35
+    },
+    {
+      "url": "93",
+      "title": "预告片",
+      "weight": 38
+    },
+    {
+      "url": "94",
+      "title": "体育",
+      "weight": 39
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "id": "bfzyapi",
+  "api": "https://bfzyapi.com/api.php/provide/vod/",
+  "name": "暴风资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://bfzyapi.com/favicon.ico",
+  "description": "暴风资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "bfzym3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "20",
+      "title": "电影片",
+      "weight": 1
+    },
+    {
+      "url": "21",
+      "title": "动作片",
+      "weight": 2
+    },
+    {
+      "url": "22",
+      "title": "喜剧片",
+      "weight": 3
+    },
+    {
+      "url": "23",
+      "title": "恐怖片",
+      "weight": 4
+    },
+    {
+      "url": "24",
+      "title": "科幻片",
+      "weight": 5
+    },
+    {
+      "url": "25",
+      "title": "爱情片",
+      "weight": 6
+    },
+    {
+      "url": "26",
+      "title": "剧情片",
+      "weight": 7
+    },
+    {
+      "url": "27",
+      "title": "战争片",
+      "weight": 8
+    },
+    {
+      "url": "28",
+      "title": "纪录片",
+      "weight": 9
+    },
+    {
+      "url": "29",
+      "title": "理论片",
+      "weight": 10
+    },
+    {
+      "url": "30",
+      "title": "连续剧",
+      "weight": 11
+    },
+    {
+      "url": "31",
+      "title": "国产剧",
+      "weight": 12
+    },
+    {
+      "url": "32",
+      "title": "欧美剧",
+      "weight": 13
+    },
+    {
+      "url": "33",
+      "title": "香港剧",
+      "weight": 14
+    },
+    {
+      "url": "34",
+      "title": "韩国剧",
+      "weight": 15
+    },
+    {
+      "url": "35",
+      "title": "台湾剧",
+      "weight": 16
+    },
+    {
+      "url": "36",
+      "title": "日本剧",
+      "weight": 17
+    },
+    {
+      "url": "37",
+      "title": "海外剧",
+      "weight": 18
+    },
+    {
+      "url": "38",
+      "title": "泰国剧",
+      "weight": 19
+    },
+    {
+      "url": "39",
+      "title": "综艺片",
+      "weight": 20
+    },
+    {
+      "url": "40",
+      "title": "大陆综艺",
+      "weight": 21
+    },
+    {
+      "url": "41",
+      "title": "香港综艺",
+      "weight": 22
+    },
+    {
+      "url": "42",
+      "title": "台湾综艺",
+      "weight": 23
+    },
+    {
+      "url": "43",
+      "title": "韩国综艺",
+      "weight": 24
+    },
+    {
+      "url": "44",
+      "title": "日本综艺",
+      "weight": 25
+    },
+    {
+      "url": "45",
+      "title": "欧美综艺",
+      "weight": 26
+    },
+    {
+      "url": "46",
+      "title": "海外综艺",
+      "weight": 27
+    },
+    {
+      "url": "47",
+      "title": "港台综艺",
+      "weight": 28
+    },
+    {
+      "url": "48",
+      "title": "动漫片",
+      "weight": 29
+    },
+    {
+      "url": "49",
+      "title": "国产动漫",
+      "weight": 30
+    },
+    {
+      "url": "50",
+      "title": "日本动漫",
+      "weight": 31
+    },
+    {
+      "url": "51",
+      "title": "欧美动漫",
+      "weight": 32
+    },
+    {
+      "url": "52",
+      "title": "海外动漫",
+      "weight": 33
+    },
+    {
+      "url": "53",
+      "title": "其他",
+      "weight": 34
+    }
+  ]
+}

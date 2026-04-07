@@ -1,0 +1,191 @@
+{
+  "id": "ikunzyapi",
+  "api": "https://ikunzyapi.com/api.php/provide/vod/",
+  "name": "爱坤资源",
+  "weight": 0,
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "favicon": "https://ikunzyapi.com/favicon.ico",
+  "description": "爱坤资源网，提供动作、喜剧、爱情、科幻等多种类型的电影，以及国产、港台、日韩、欧美等地区的电视剧，还有各类动漫、综艺和纪录片。",
+  "supportClass": true,
+  "supportSearch": true,
+  "headers": {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.7103.48 Safari/537.36"
+  },
+  "dtNodesEntities": [
+    {
+      "id": "ikm3u8",
+      "name": "在线播放",
+      "weight": 0,
+      "videoType": "Direct",
+      "canDownload": true
+    }
+  ],
+  "classEntities": [
+    {
+      "url": "6",
+      "title": "动作片",
+      "weight": 6
+    },
+    {
+      "url": "7",
+      "title": "喜剧片",
+      "weight": 7
+    },
+    {
+      "url": "8",
+      "title": "爱情片",
+      "weight": 8
+    },
+    {
+      "url": "9",
+      "title": "科幻片",
+      "weight": 9
+    },
+    {
+      "url": "10",
+      "title": "恐怖片",
+      "weight": 10
+    },
+    {
+      "url": "11",
+      "title": "剧情片",
+      "weight": 11
+    },
+    {
+      "url": "12",
+      "title": "战争片",
+      "weight": 12
+    },
+    {
+      "url": "13",
+      "title": "惊悚片",
+      "weight": 13
+    },
+    {
+      "url": "14",
+      "title": "家庭片",
+      "weight": 14
+    },
+    {
+      "url": "15",
+      "title": "古装片",
+      "weight": 15
+    },
+    {
+      "url": "16",
+      "title": "历史片",
+      "weight": 16
+    },
+    {
+      "url": "17",
+      "title": "悬疑片",
+      "weight": 17
+    },
+    {
+      "url": "18",
+      "title": "犯罪片",
+      "weight": 18
+    },
+    {
+      "url": "19",
+      "title": "灾难片",
+      "weight": 19
+    },
+    {
+      "url": "20",
+      "title": "记录片",
+      "weight": 20
+    },
+    {
+      "url": "21",
+      "title": "奇幻片",
+      "weight": 21
+    },
+    {
+      "url": "22",
+      "title": "动画片",
+      "weight": 22
+    },
+    {
+      "url": "23",
+      "title": "国产剧",
+      "weight": 23
+    },
+    {
+      "url": "24",
+      "title": "香港剧",
+      "weight": 24
+    },
+    {
+      "url": "25",
+      "title": "韩国剧",
+      "weight": 25
+    },
+    {
+      "url": "26",
+      "title": "欧美剧",
+      "weight": 26
+    },
+    {
+      "url": "28",
+      "title": "日本剧",
+      "weight": 27
+    },
+    {
+      "url": "29",
+      "title": "台湾剧",
+      "weight": 28
+    },
+    {
+      "url": "30",
+      "title": "泰国剧",
+      "weight": 29
+    },
+    {
+      "url": "31",
+      "title": "海外剧",
+      "weight": 30
+    },
+    {
+      "url": "32",
+      "title": "大陆综艺",
+      "weight": 31
+    },
+    {
+      "url": "33",
+      "title": "日韩综艺",
+      "weight": 32
+    },
+    {
+      "url": "34",
+      "title": "港台综艺",
+      "weight": 33
+    },
+    {
+      "url": "35",
+      "title": "欧美综艺",
+      "weight": 34
+    },
+    {
+      "url": "36",
+      "title": "国产动漫",
+      "weight": 35
+    },
+    {
+      "url": "37",
+      "title": "日本动漫",
+      "weight": 36
+    },
+    {
+      "url": "38",
+      "title": "欧美动漫",
+      "weight": 37
+    },
+    {
+      "url": "39",
+      "title": "海外动漫",
+      "weight": 38
+    }
+  ]
+}
