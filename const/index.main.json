@@ -34,6 +34,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "xiuluo",
+      "icon": "/plugins/icons/xiuluo.webp",
+      "name": "修罗影视",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "修罗影视是一个提供热门电影、最新电视剧、免费下载的影视网站。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": false,
+      "isSupportHomeRecommends": true,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/xiuluo.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "taopianzy",
       "icon": "https://www.taopianzy.com/favicon.ico",
       "name": "淘片资源网",
