@@ -34,6 +34,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "agedm",
+      "icon": "https://p1.bdxiguaimg.com/origin/pgc-image/8069753dcbde447aa5eacf1bf3f390b5",
+      "name": "AGE动漫",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "动漫资源，涵盖日本新番、经典动漫作品以及一些国产动画和剧场版电影。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/agedm.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "xiuluo",
       "icon": "/plugins/icons/xiuluo.webp",
       "name": "修罗影视",
