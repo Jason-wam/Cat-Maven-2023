@@ -49,6 +49,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "mwcy",
+      "icon": "https://p0.ssl.qhimgs1.com/bdr/468_250_/t02fb0f902e0d05dfd4.png",
+      "name": "喵物次元",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "喵物次元是一个提供动漫番剧资源的网站，包含番剧、剧场等分类。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": true,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/mwcy.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "xiuluo",
       "icon": "/plugins/icons/xiuluo.webp",
       "name": "修罗影视",
