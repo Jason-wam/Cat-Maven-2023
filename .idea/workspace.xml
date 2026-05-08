@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件">
-      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/plugins/json/wsyzyapi.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/plugins/json/wsyzyapi.json" afterDir="false" />
-    </list>
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="修复喵物次元首页推荐详情页数据缺失的问题" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,19 +34,19 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Cat-Maven-2023/const/plugins",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/Cat-Maven-2023/const/plugins&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins" />
@@ -57,6 +54,7 @@
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins\jars" />
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const" />
     </key>
   </component>
@@ -77,6 +75,7 @@
       <updated>1774260486962</updated>
       <workItem from="1774260488262" duration="5085000" />
       <workItem from="1774349195637" duration="6623000" />
+      <workItem from="1776664885582" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构">
       <option name="closed" value="true" />
@@ -134,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774360210380</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修复喵物次元首页推荐详情页数据缺失的问题">
+      <option name="closed" value="true" />
+      <created>1776664959630</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1776664959630</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +154,7 @@
     <MESSAGE value="feat(const): 更新图标文件并修改配置引用&#10;&#10;- 添加新的SVG格式图标文件 index.main.260324.svg&#10;- 修改配置文件中的图标路径引用&#10;- 移除旧的WEBP格式图标文件引用" />
     <MESSAGE value="docs(readme): 更新文档添加插件订阅地址&#10;&#10;- 在 README 中添加插件订阅地址章节&#10;- 提供插件订阅的 JSON 配置链接&#10;- 保留原有的问题提交和下载地址信息" />
     <MESSAGE value="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(const): 更新图标文件并修改配置引用&#10;&#10;- 删除旧的SVG图标文件 index.main.260324.svg&#10;- 将配置文件中的图标引用从SVG改为WEBP格式&#10;- 更新图标路径指向新的 index.main.260122.webp 文件" />
+    <MESSAGE value="修复喵物次元首页推荐详情页数据缺失的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复喵物次元首页推荐详情页数据缺失的问题" />
   </component>
 </project>
