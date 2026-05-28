@@ -19,6 +19,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "guangyayunpan",
+      "icon": "/plugins/icons/guangya.webp",
+      "name": "光鸭云盘",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "光鸭云盘是迅雷旗下的一款磁力云盘。",
+      "updateDescription": "Update description test...........................",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/guangya.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "omo_fun_comic",
       "icon": "/plugins/icons/omofun.webp",
       "name": "omofun动漫",
