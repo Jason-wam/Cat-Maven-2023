@@ -19,6 +19,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "qingtingFM",
+      "icon": "/plugins/icons/qingtingfm.webp",
+      "name": "蜻蜓FM",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "在线收听FM广播电台-蜻蜓FM电台。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": false,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/qingtingfm.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "guangyayunpan",
       "icon": "/plugins/icons/guangya.webp",
       "name": "光鸭云盘",
