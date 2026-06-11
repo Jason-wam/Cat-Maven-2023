@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="feat(plugin): 光鸭云盘插件支持登录状态检查，登录后显示头像">
-      <change afterPath="$PROJECT_DIR$/const/plugins/icons/qingtingfm.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/const/plugins/jars/qingtingfm.jar" afterDir="false" />
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="feat(plugin): 添加蜻蜓FM插件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,20 +36,20 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Cat-Maven-2023/const/plugins/icons",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "http.proxy",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/Cat-Maven-2023/const/plugins/icons&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins\icons" />
@@ -87,7 +84,8 @@
       <workItem from="1779968850221" duration="1593000" />
       <workItem from="1780304125835" duration="76000" />
       <workItem from="1780304474806" duration="393000" />
-      <workItem from="1781166905408" duration="405000" />
+      <workItem from="1781166905408" duration="565000" />
+      <workItem from="1781171713386" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构">
       <option name="closed" value="true" />
@@ -193,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780304859747</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat(plugin): 添加蜻蜓FM插件">
+      <option name="closed" value="true" />
+      <created>1781167430974</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1781167430974</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +216,7 @@
     <MESSAGE value="fix(xiuLuo): 修复修罗影视没有数据的问题&#10;&#10;- 修复影视数据加载问题" />
     <MESSAGE value="feat(plugin): 添加光鸭云盘插件支持&#10;&#10;- 集成光鸭云盘插件配置信息&#10;- 添加插件图标和基础元数据&#10;- 配置插件版本信息和描述&#10;- 设置插件下载地址和引擎类型&#10;- 开启插件搜索和分类功能支持&#10;- 配置首页推荐和首次启动自动安装选项" />
     <MESSAGE value="feat(plugin): 光鸭云盘插件支持登录状态检查，登录后显示头像" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(plugin): 光鸭云盘插件支持登录状态检查，登录后显示头像" />
+    <MESSAGE value="feat(plugin): 添加蜻蜓FM插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(plugin): 添加蜻蜓FM插件" />
   </component>
 </project>
