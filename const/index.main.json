@@ -94,6 +94,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "girigiri",
+      "icon": "https://ani.girigirilove.com/upload/anime.girigirilove.com_.png",
+      "name": "GiriGiri爱动漫",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "girigiri愛動漫｜高清动漫線上觀看｜彈幕番劇平台。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": false,
+      "isSupportHomeRecommends": true,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/girigiri.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "xiuluo",
       "icon": "/plugins/icons/xiuluo.webp",
       "name": "修罗影视",
