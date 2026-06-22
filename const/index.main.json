@@ -199,6 +199,36 @@
       "engineType": "Mac"
     },
     {
+      "id": "yayazyapi",
+      "icon": "https://p0.ssl.qhimgs1.com/bdr/460__/t048afe93b867df89a0.jpg",
+      "name": "鸭鸭资源网",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "鸭鸭资源网,资源丰富,每日更新,提供电影、电视剧、动漫、综艺、短剧、体育赛事等多种类型的影视资源",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": true,
+      "downloadUrl": "/plugins/json/yayazyapi.json",
+      "engineType": "Mac"
+    },
+    {
+      "id": "tyyszyapi",
+      "icon": "https://p2.ssl.qhimgs1.com/bdr/468_250_/t0254bb9b2d73953b72.jpg",
+      "name": "天涯资源网",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "天涯资源网,资源丰富,每日更新,提供电影、电视剧、动漫、综艺、短剧、体育赛事等多种类型的影视资源",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": true,
+      "downloadUrl": "/plugins/json/tyyszyapi.json",
+      "engineType": "Mac"
+    },
+    {
       "id": "rycjapi",
       "icon": "https://cj.rycjapi.com/favicon.ico",
       "name": "如意资源网",
