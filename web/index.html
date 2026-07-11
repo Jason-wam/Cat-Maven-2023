@@ -866,7 +866,7 @@
                     const downloadBtn = document.getElementById('downloadBtn');
                     console.log('设置下载链接:', apkAsset.browser_download_url);
                     // 使用gh.llkk.cc代理
-                    const proxyUrl = `https://gh.llkk.cc/${apkAsset.browser_download_url}`;
+                    const proxyUrl = `https://gh-proxy.org/${apkAsset.browser_download_url}`;
                     downloadBtn.href = proxyUrl;
                     
                     // 更新二维码链接
@@ -886,7 +886,7 @@
                 // 失败时使用默认链接
                 const downloadBtn = document.getElementById('downloadBtn');
                 console.log('使用默认下载链接');
-                const defaultUrl = 'https://gh.llkk.cc/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
+                const defaultUrl = 'https://gh-proxy.org/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
                 downloadBtn.href = defaultUrl;
                 
                 // 更新二维码为默认链接
@@ -904,7 +904,7 @@
         window.addEventListener('DOMContentLoaded', function() {
             console.log('DOM加载完成，设置默认下载链接');
             const downloadBtn = document.getElementById('downloadBtn');
-            const defaultUrl = 'https://gh.llkk.cc/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
+            const defaultUrl = 'https://gh-proxy.org/https://github.com/Jason-wam/Cat-Maven-2023/releases/download/v5.0.0/Release-5.0.0.apk';
             downloadBtn.href = defaultUrl;
             
             // 设置二维码默认链接
