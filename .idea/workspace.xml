@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="feat(plugin): 添加蜻蜓FM插件" />
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="fix(download): 更新下载链接代理服务&#10;&#10;- 将下载链接的代理服务从 gh.llkk.cc 更改为 gh-proxy.org&#10;- 更新了默认下载链接使用的代理服务地址&#10;- 替换了所有相关的代理 URL 配置">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/const/plugins/jars/xiuluo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/const/plugins/jars/xiuluo.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +22,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Jason-wam/Cat-Maven-2023.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:Jason-wam/Cat-Maven-2023.git&quot;,
     &quot;accountId&quot;: &quot;4f65840f-a8ae-4ecd-88a8-0e0d1b6d333a&quot;
   }
 }</component>
@@ -34,20 +38,21 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Cat-Maven-2023/const/plugins/jars",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "http.proxy",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/Cat-Maven-2023/const/plugins/jars&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins\jars" />
@@ -63,8 +68,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.25134.95" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.25134.95" />
       </set>
     </attachedChunks>
   </component>
@@ -84,6 +89,9 @@
       <workItem from="1780304474806" duration="393000" />
       <workItem from="1781166905408" duration="565000" />
       <workItem from="1781171713386" duration="486000" />
+      <workItem from="1783757227708" duration="149000" />
+      <workItem from="1784977693084" duration="3781000" />
+      <workItem from="1785135785569" duration="624000" />
     </task>
     <task id="LOCAL-00001" summary="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构">
       <option name="closed" value="true" />
@@ -205,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781172068909</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fix(download): 更新下载链接代理服务&#10;&#10;- 将下载链接的代理服务从 gh.llkk.cc 更改为 gh-proxy.org&#10;- 更新了默认下载链接使用的代理服务地址&#10;- 替换了所有相关的代理 URL 配置">
+      <option name="closed" value="true" />
+      <created>1783757327844</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1783757327844</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +239,7 @@
     <MESSAGE value="feat(plugin): 添加光鸭云盘插件支持&#10;&#10;- 集成光鸭云盘插件配置信息&#10;- 添加插件图标和基础元数据&#10;- 配置插件版本信息和描述&#10;- 设置插件下载地址和引擎类型&#10;- 开启插件搜索和分类功能支持&#10;- 配置首页推荐和首次启动自动安装选项" />
     <MESSAGE value="feat(plugin): 光鸭云盘插件支持登录状态检查，登录后显示头像" />
     <MESSAGE value="feat(plugin): 添加蜻蜓FM插件" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(plugin): 添加蜻蜓FM插件" />
+    <MESSAGE value="fix(download): 更新下载链接代理服务&#10;&#10;- 将下载链接的代理服务从 gh.llkk.cc 更改为 gh-proxy.org&#10;- 更新了默认下载链接使用的代理服务地址&#10;- 替换了所有相关的代理 URL 配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(download): 更新下载链接代理服务&#10;&#10;- 将下载链接的代理服务从 gh.llkk.cc 更改为 gh-proxy.org&#10;- 更新了默认下载链接使用的代理服务地址&#10;- 替换了所有相关的代理 URL 配置" />
   </component>
 </project>
