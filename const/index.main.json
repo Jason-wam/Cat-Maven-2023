@@ -79,6 +79,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "7sefun",
+      "icon": "https://www.7sefun.top/pc/img/favicon.ico",
+      "name": "七色番剧",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "七色番动漫视频网 - (つェ⊂) 7SeFuN",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": false,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/7sefun.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "mwcy",
       "icon": "https://p0.ssl.qhimgs1.com/bdr/468_250_/t02fb0f902e0d05dfd4.png",
       "name": "喵物次元",
