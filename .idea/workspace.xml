@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="chore(const): 更新插件名称为中文示例&#10;&#10;- 将插件名称从 &quot;DroidEasySearch&quot; 修改为 &quot;示例插件&quot;&#10;- 保持图标和描述信息不变&#10;- 维持插件列表结构">
-      <change afterPath="$PROJECT_DIR$/const/plugins/jars/sorani.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="feat(const): 添加青空次元引擎支持">
+      <change beforePath="$PROJECT_DIR$/const/plugins/jars/sorani.jar" beforeDir="false" afterPath="$PROJECT_DIR$/const/plugins/jars/sorani.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1783757227708" duration="149000" />
       <workItem from="1784977693084" duration="3781000" />
       <workItem from="1785135785569" duration="2198000" />
-      <workItem from="1785334059621" duration="7592000" />
+      <workItem from="1785334059621" duration="8083000" />
     </task>
     <task id="LOCAL-00001" summary="feat(plugin): 添加多个视频资源站点配置&#10;&#10;- 新增樱花资源(apiyhzy)站点配置，支持多种影片类型分类&#10;- 新增豆瓣资源(dbzy5)站点配置，支持搜索和多类型内容分类&#10;- 新增天堂资源(dyttzyapi)站点配置，支持短剧和各类影视分类&#10;- 新增豪华资源(hhzyapi)站点配置，支持欧美剧、动漫等分类&#10;- 新增红牛资源(hongniuzy2)站点配置，支持短剧、综艺、体育等分类&#10;- 新增虎牙资源(huyaapi)站点配置，支持多地区剧集和体育赛事分类&#10;- 更新主索引文件(index.main.json)，集成所有新增的资源站点&#10;- 移除旧的音频源文档(AudioSources.md)，优化项目结构">
       <option name="closed" value="true" />
@@ -277,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1785479927901</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat(const): 添加青空次元引擎支持&#10;&#10;- 新增 sorani 引擎配置项&#10;- 配置青空次元网站图标和基本信息&#10;- 设置引擎类型为 Jar 并启用搜索功能&#10;- 配置自动安装选项和下载路径">
+      <option name="closed" value="true" />
+      <created>1785489567740</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1785489567740</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat(const): 添加青空次元引擎支持">
+      <option name="closed" value="true" />
+      <created>1785489672411</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1785489672411</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,6 +315,8 @@
     <MESSAGE value="feat(const): 添加七色番剧引擎支持&#10;&#10;- 集成七色番剧网站插件&#10;- 配置七色番剧引擎基本信息&#10;- 设置插件下载路径和版本信息&#10;- 启用搜索和分类功能支持&#10;- 添加图标和描述信息" />
     <MESSAGE value="feat(const): 添加动漫巴士引擎" />
     <MESSAGE value="chore(const): 更新插件名称为中文示例&#10;&#10;- 将插件名称从 &quot;DroidEasySearch&quot; 修改为 &quot;示例插件&quot;&#10;- 保持图标和描述信息不变&#10;- 维持插件列表结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(const): 更新插件名称为中文示例&#10;&#10;- 将插件名称从 &quot;DroidEasySearch&quot; 修改为 &quot;示例插件&quot;&#10;- 保持图标和描述信息不变&#10;- 维持插件列表结构" />
+    <MESSAGE value="feat(const): 添加青空次元引擎支持&#10;&#10;- 新增 sorani 引擎配置项&#10;- 配置青空次元网站图标和基本信息&#10;- 设置引擎类型为 Jar 并启用搜索功能&#10;- 配置自动安装选项和下载路径" />
+    <MESSAGE value="feat(const): 添加青空次元引擎支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(const): 添加青空次元引擎支持" />
   </component>
 </project>
