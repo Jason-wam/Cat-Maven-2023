@@ -49,6 +49,21 @@
       "engineType": "Jar"
     },
     {
+      "id": "sorani",
+      "icon": "https://www.sorani.net/favicon.ico",
+      "name": "青空次元",
+      "versionCode": 1,
+      "versionName": "1.0.0",
+      "description": "青空次元 - 网友称最夯动漫在线站。",
+      "updateDescription": "",
+      "isSupportClass": true,
+      "isSupportSearch": true,
+      "isSupportHomeRecommends": true,
+      "autoInstallAtFirstLaunch": false,
+      "downloadUrl": "/plugins/jars/sorani.jar",
+      "engineType": "Jar"
+    },
+    {
       "id": "omo_fun_comic",
       "icon": "/plugins/icons/omofun.webp",
       "name": "omofun动漫",
