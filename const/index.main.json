@@ -9,7 +9,7 @@
       "name": "哔哩哔哩",
       "versionCode": 2,
       "versionName": "1.0.1",
-      "description": "实现了基本分类的浏览和播放，不涉及会员和登录内容推荐。",
+      "description": "实现了基本分类的浏览和播放，不涉及会员内容。",
       "updateDescription": "修复扫码登录后Cookie失效的问题",
       "isSupportClass": true,
       "isSupportSearch": true,
@@ -61,21 +61,6 @@
       "isSupportHomeRecommends": true,
       "autoInstallAtFirstLaunch": false,
       "downloadUrl": "/plugins/jars/sorani.jar",
-      "engineType": "Jar"
-    },
-    {
-      "id": "omo_fun_comic",
-      "icon": "/plugins/icons/omofun.webp",
-      "name": "omofun动漫",
-      "versionCode": 1,
-      "versionName": "1.0.0",
-      "description": "动漫资源，涵盖日本新番、经典动漫作品以及一些国产动画和剧场版电影。",
-      "updateDescription": "",
-      "isSupportClass": true,
-      "isSupportSearch": true,
-      "isSupportHomeRecommends": true,
-      "autoInstallAtFirstLaunch": false,
-      "downloadUrl": "/plugins/jars/omofun.jar",
       "engineType": "Jar"
     },
     {
