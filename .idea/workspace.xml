@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="(bilibili): 修复扫码登录后Cookie失效的问题&#10;&#10;- 更新版本号从1.0.0到1.0.1&#10;- 修改更新描述为Cookie失效问题修复">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/index.main.json" beforeDir="false" afterPath="$PROJECT_DIR$/const/index.main.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/const/plugins/jars/omofun.jar" beforeDir="false" />
-    </list>
+    <list default="true" id="23f31208-8104-46ba-9e42-01bb0f8ee8f6" name="更改" comment="移除omofun" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,23 +34,23 @@
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/IdeaProjects/Cat-Maven-2023/const/plugins/jars",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "qoder.settings.plugin",
-    "show.migrate.to.gradle.popup": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/Cat-Maven-2023/const/plugins/jars&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;qoder.settings.plugin&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\Cat-Maven-2023\const\plugins\jars" />
@@ -338,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785703795952</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="移除omofun">
+      <option name="closed" value="true" />
+      <created>1787679755620</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1787679755620</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,6 +368,7 @@
     <MESSAGE value="feat(const): 添加青空次元引擎支持&#10;&#10;- 新增 sorani 引擎配置项&#10;- 配置青空次元网站图标和基本信息&#10;- 设置引擎类型为 Jar 并启用搜索功能&#10;- 配置自动安装选项和下载路径" />
     <MESSAGE value="feat(const): 添加青空次元引擎支持" />
     <MESSAGE value="fix(bilibili): 修复扫码登录后Cookie失效的问题&#10;&#10;- 更新版本号从1.0.0到1.0.1&#10;- 修改更新描述为Cookie失效问题修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(bilibili): 修复扫码登录后Cookie失效的问题&#10;&#10;- 更新版本号从1.0.0到1.0.1&#10;- 修改更新描述为Cookie失效问题修复" />
+    <MESSAGE value="移除omofun" />
+    <option name="LAST_COMMIT_MESSAGE" value="移除omofun" />
   </component>
 </project>
